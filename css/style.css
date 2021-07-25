@@ -24,7 +24,28 @@ body {
     color: black;
     cursor: pointer;
 }
+#logo {
+    margin: auto;
+    animation: logo-rotate 5s infinite;
+  }
+@keyframes logo-rotate {
+    25%{
+        transform:scale(1.2);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+  }
+#beat {
+    padding-left: 20px;
+	animation: beat 1s infinite alternate;
+	transform-origin: center;
+}
 
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
 /* upper header */
 
 /* Header Starts */
@@ -36,6 +57,7 @@ header {
 .navbar {
     font-size: 20px;
     font-family: 'Bellota', cursive;
+    z-index: 9999;
 }
 
 .dropdown-menu {
