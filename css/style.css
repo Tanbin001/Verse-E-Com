@@ -6,36 +6,72 @@ font-family: 'Josefin Slab', serif;
 font-family: 'Monoton', cursive;
 */
 
-body{
+body {
     font-family: 'Josefin Slab', serif;
     /* background-color: rgba(9, 84, 128, 0.808); */
+    overflow-x: hidden;
 }
+
 /* upper header */
-.top-level{
+
+.top-level {
     /* color: rgb(155, 149, 149); */
     background-image: linear-gradient(40deg, rgb(173, 163, 238), rgba(0, 183, 255, 0.719));
 }
-.top-level a{
+
+.top-level a {
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
+
 /* upper header */
 
 /* Header Starts */
-header{
+
+header {
     background-image: linear-gradient(60deg, rgba(140, 124, 245, 0.733), rgba(23, 177, 238, 0.719));
 }
-.navbar{
+
+.navbar {
     font-size: 20px;
     font-family: 'Bellota', cursive;
 }
-/* Header Starts */
 
-/* Part-1 */
-.carousel-item img{
-    opacity: 80%;
+.dropdown-menu {
+    background-image: linear-gradient(60deg, rgba(140, 124, 245, 0.733), rgba(23, 177, 238, 0.719));
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+/* Header ends */
+
+
+/* Part-1 starts */
+.part-1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.carousel-item img {
+    opacity: 85%;
     width: 100%;
     height: 611px;
 }
-/* Part-1 */
+.middle {
+    position: absolute;
+    font-size: 40px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.middle h1{
+    font-size: 50px;
+}
+.middle h1 span{
+    color: teal;
+    font-weight: bold;
+}
+/* Part-1 ends */
