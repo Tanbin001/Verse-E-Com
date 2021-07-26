@@ -7,21 +7,19 @@ font-family: 'Monoton', cursive;
 */
 
 body {
-    font-family: 'Josefin Slab', serif;
     /* background-color: rgba(9, 84, 128, 0.808); */
     overflow-x: hidden;
 }
 
 /* upper header */
-
 .top-level {
     /* color: rgb(155, 149, 149); */
     background-image: linear-gradient(40deg, rgb(173, 163, 238), rgba(0, 183, 255, 0.719));
 }
 
-.top-level a {
+.top-level a, p, span {
     text-decoration: none;
-    color: black;
+    color: rgb(90, 89, 89);
     cursor: pointer;
 }
 #logo {
@@ -38,32 +36,30 @@ body {
   }
 #beat {
     padding-left: 20px;
-	animation: beat 1s infinite alternate;
+	animation: beat 7s infinite alternate;
 	transform-origin: center;
 }
-
-/* Heart beat animation */
 @keyframes beat{
 	to { transform: scale(1.2); }
 }
 /* upper header */
 
-/* Header Starts */
 
+/* Header Starts */
 header {
     background-image: linear-gradient(60deg, rgba(140, 124, 245, 0.733), rgba(23, 177, 238, 0.719));
+    font-family: 'Josefin Slab', serif;
+
 }
 
 .navbar {
     font-size: 20px;
     font-family: 'Bellota', cursive;
-    z-index: 9999;
+    /* z-index: 9999; */
 }
-
 .dropdown-menu {
     background-image: linear-gradient(60deg, rgba(140, 124, 245, 0.733), rgba(23, 177, 238, 0.719));
 }
-
 .dropdown-item:hover {
     background-color: black;
     color: white;
@@ -73,12 +69,13 @@ header {
 
 /* Part-1 starts */
 .part-1 {
-    position: relative;
+    /* position: relative; */
+    font-family: 'Josefin Slab', serif;
     text-align: center;
     color: white;
 }
 .carousel-item img {
-    opacity: 85%;
+    /* opacity: 85%; */
     width: 100%;
     height: 611px;
 }
@@ -97,3 +94,85 @@ header {
     font-weight: bold;
 }
 /* Part-1 ends */
+
+/* Part-2 starts */
+.para{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 10px;
+}
+.coll{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+.coll:hover{
+    background-image: linear-gradient(60deg, rgba(140, 124, 245, 0.733), rgba(23, 177, 238, 0.719));
+}
+.para{
+    font-family: 'Monoton', cursive;
+    font-size: 45px;
+    font-weight: 500;
+}
+/* Part-2 ends */
+
+/* Part 3 starts */
+
+.extra {
+    padding-top: 40px;
+    margin-bottom: 200px;
+}
+
+.first_h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 60px;
+    font-family: 'Gruppo', sans-serif;
+}
+
+.card {
+    transform: translateY(0px);
+    transition: all 2s;
+    margin: 0 auto;
+    background-image: white;
+}
+
+.card-img-top {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0 black;
+    border-radius: 5%;
+    transform: translateY(-50px);
+    background-image: linear-gradient(40deg, rgb(173, 163, 238), rgba(0, 183, 255, 0.719));
+    /* background-image: radial-gradient(rgb(47, 120, 230), rgb(15, 235, 132)); */
+}
+
+.cards-sec {
+    border-radius: 30px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.card-3 {
+    height: 550px;
+}
+.card-body{
+    overflow-x: hidden;
+}
+.card-body a{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+/* Parts 3 ends */

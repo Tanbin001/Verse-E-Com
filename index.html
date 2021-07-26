@@ -33,8 +33,9 @@
     <section class="top-level px-2">
         <div class="elements d-flex justify-content-between animate__animated animate__bounceInUp animate__delay-1s">
             <span class="hvr-wobble-top"><a href="mailto:tanbinsiddiqui17@gmail.com">Send E-mail</a></span>
-            <p class="hvr-wobble-top mb-0">Date/Time: <span id="datetime"></span></p>
-            <span class="hvr-wobble-top">By <a href="#">Mr. Verse</a></span>
+            <p class="hvr-wobble-top mb-0" title="Reload To View Updated Time">Date/Time: <span id="datetime"></span>
+            </p>
+            <span class="hvr-wobble-top" title="Follow Me On Git?">By <a href="#">Mr. Verse</a></span>
         </div>
     </section>
     <!--Top Header Ends -->
@@ -46,15 +47,16 @@
                 <div class=" container-fluid">
                     <a class="navbar-brand animate__animated animate__lightSpeedInLeft" href="#">
                         <img class="px-2 hvr-bob" id="logo" src="images/logo/logo-1.png" width="75" alt=""><span
-                            class="hvr-underline-from-center fs-3 fw-bold" id="beat">TechVerse</span></a>
-                    <button class="navbar-toggler animate__animated animate__lightSpeedInLeft" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                            class="hvr-underline-from-center fs-3 fw-bold" id="beat"
+                            style="color: black;">TechVerse</span></a>
+                    <button class="navbar-toggler animate__animated animate__lightSpeedInLeft" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse justify-content-end animate__animated animate__lightSpeedInRight" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav animate__animated animate__lightSpeedInRight">
                             <li class="nav-item hvr-underline-from-center">
                                 <a class="nav-link active" aria-current="page" href="#header-part">Home</a>
                             </li>
@@ -76,13 +78,14 @@
                             </li>
                         </ul>
                         <!-- Offcanvas part -->
-                        <button class="btn hvr-underline-from-center" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">About</button>
+                        <button class="btn hvr-underline-from-center animate__animated animate__lightSpeedInRight"
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">Offcanvas</button>
 
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
-                                <h5 id="offcanvasRightLabel">About Myself</h5>
+                                <h5 id="offcanvasRightLabel">Offcanvas right</h5>
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                     aria-label="Close"></button>
                             </div>
@@ -155,7 +158,6 @@
                             <!-- Offcanvas part -->
                         </div>
                     </div>
-                </div>
             </nav>
         </div>
     </header>
@@ -176,7 +178,7 @@
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="images/slider/slider (4).jpg" class="d-block w-100" alt="...">
                     <div class="middle">
-                        <h1>It's never Too Late To <br> <span>Start</span></h1>
+                        <h1>It's never Too Late To <br> <span>Start New</span></h1>
                     </div>
 
                     <div class="carousel-caption d-none d-md-block">
@@ -187,7 +189,7 @@
                 <div class="carousel-item" data-bs-interval="10000">
                     <img src="images/slider/slider (2).jpg" class="d-block w-100" alt="...">
                     <div class="middle">
-                        <h1>Everyday Is A New Day To <span>Learn New</span></h1>
+                        <h1>Everyday Is A New Day To <span>Wear New</span></h1>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
@@ -197,7 +199,7 @@
                 <div class="carousel-item" data-bs-interval="15000">
                     <img src="images/slider/slider (3).jpg" class="d-block w-100" alt="...">
                     <div class="middle">
-                        <h1>The Best of Myself Is Yet To Be <span>Discoverd</span></h1>
+                        <h1>The Best of Yourself Is Yet To Be <span>Discoverd</span></h1>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
@@ -205,29 +207,106 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            </button> -->
+            <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </section>
     <!-- Section Part-1 Ends -->
 
     <!-- Section Part-2 Starts -->
     <section class="part-2">
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <div class="content">
-                <h1 class="text-center">About Myself</h1>
+                <h1 class="text-center mb-5">Something you Might Want To Have</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="coll p-3 d-flex justify-content-between align-items-center"
+                        style="background-color:rgb(81, 172, 172) ;">
+                        <div class="para text-center hvr-grow-rotate">Watch</div>
+                        <div class="item-pic hvr-grow-rotate">
+                            <img src="images/categories/watch.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="coll p-3 d-flex justify-content-between align-items-center"
+                        style="background-color: rgb(95, 140, 192);">
+                        <div class="para text-center hvr-grow-rotate">Bag</div>
+                        <div class="item-pic hvr-grow-rotate">
+                            <img src="images/categories/bag.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="coll p-3 d-flex justify-content-between align-items-center"
+                        style="background-color:rgb(81, 151, 144) ;">
+                        <div class="para text-center hvr-grow-rotate">Shoe</div>
+                        <div class="item-pic hvr-grow-rotate">
+                            <img src="images/categories/shoes.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- Section Part-2 Ends -->
+
+    <!-- Section Part-3 starts -->
+    <section class="extra">
+        <div class="container">
+            <h1 class="first_h1">
+                <center>Our Exclusive News section</center>
+            </h1>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cards_sec">
+                        <div class="card card-3">
+                            <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">One by one, the team of the CONMEBOL Copa America chosen by GET</h5>
+                                <p class="card-text">The Technical Study Group (GET) of CONMEBOL have confirmed their team of the CONMEBOL Copa América 2021 which came to a close on Saturday with the dramatic final between Argentina and Brazil.</p>
+                                <a target="_blank" href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cards_sec">
+                        <div class="card card-3">
+                            <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">All of the CONMEBOL Copa America champions</h5>
+                                <p class="card-text">Argentina were crowned champion of the CONMEBOL Copa America 2021 with a 1-0 win against rivals Brazil at the Estadio Maracaná to regain the title after a long 28 year wait.</p>
+                                <a target="_blank" href="https://copaamerica.com/en/news/all-of-the-conmebol-copa-america-champions" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="cards_sec">
+                        <div class="card card-3">
+                            <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Messi, the best player at the CONMEBOL Copa America 2021</h5>
+                                <p class="card-text">His tears at the final whistle, the hug for each of his teammates, his support for the coaches and his video call to loved ones in the middle of the field at the Maracaná. </p>
+                                <a target="_blank" href="https://copaamerica.com/en/news/messi-numbers-conmebol-copa-america-2021-argentina-champion" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Part-3 Ends -->
 
     <!-- Time and Date -->
     <script>
