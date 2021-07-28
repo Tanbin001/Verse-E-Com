@@ -30,7 +30,7 @@
 <body>
 
     <!-- Top Header Starts -->
-    <section class="top-level px-2">
+    <section id="top" class="top-level px-2">
         <div class="elements d-flex justify-content-between animate__animated animate__bounceInUp animate__delay-1s">
             <span class="hvr-wobble-top"><a href="mailto:tanbinsiddiqui17@gmail.com">Send E-mail</a></span>
             <p class="hvr-wobble-top mb-0" title="Reload To View Updated Time">Date/Time: <span id="datetime"></span>
@@ -43,376 +43,394 @@
     <!-- Header Starts -->
     <header id="header-part">
         <!-- <div class="container"> -->
-            <nav class="navbar navbar-expand-lg navbar-light pt-0 px-0 pb-2">
-                <div class="container-fluid ps-3">
-                    <a class="navbar-brand animate__animated animate__lightSpeedInLeft" href="#">
-                        <img class="px-3 hvr-bob" id="logo" src="images/logo/logo-1.png" width="75" alt=""><span
-                            class="hvr-underline-from-center fs-3 fw-bold" id="beat"
-                            style="color: black;">WearVerse</span></a>
-                    <button class="navbar-toggler animate__animated animate__lightSpeedInLeft" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <nav class="navbar navbar-expand-lg navbar-light pt-0 px-0 pb-2">
+            <div class="container-fluid ps-3">
+                <a class="navbar-brand animate__animated animate__lightSpeedInLeft" href="#">
+                    <img class="px-3 hvr-bob" id="logo" src="images/logo/logo-1.png" width="75" alt=""><span
+                        class="hvr-underline-from-center fs-3 fw-bold" id="beat"
+                        style="color: black;">WearVerse</span></a>
+                <button class="navbar-toggler animate__animated animate__lightSpeedInLeft" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav animate__animated animate__lightSpeedInRight">
-                            <li class="nav-item hvr-underline-from-center">
-                                <a class="nav-link active" aria-current="page" href="#header-part">Home</a>
-                            </li>
-                            <li class="nav-item hvr-underline-from-center">
-                                <a class="nav-link" href="#">About Me</a>
-                            </li>
-                            <li class="nav-item hvr-underline-from-center">
-                                <a class="nav-link" href="#">Education</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Dropdown link
-                                </a>
-                                <ul class="dropdown-menu pt-0 pb-0" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!-- Offcanvas part -->
-                        <button class="btn hvr-underline-from-center animate__animated animate__lightSpeedInRight"
-                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight">EXTRAS</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav animate__animated animate__lightSpeedInRight">
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link active" aria-current="page" href="#header-part">Home</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#">Education</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Dropdown link
+                            </a>
+                            <ul class="dropdown-menu pt-0 pb-0" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Offcanvas part -->
+                    <button class="btn hvr-underline-from-center animate__animated animate__lightSpeedInRight"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">EXTRAS</button>
 
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                            aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 id="offcanvasRightLabel">About</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <!-- Accordian example -->
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                My Picture
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>Yes, This Is Me - 😎</strong>
-                                                <img src="images/my-img.jpg" width="200" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
-                                                Accordion Item #2
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the second item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                Accordion Item #3
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the third item's accordion body.</strong> It is hidden
-                                                by default, until the collapse plugin adds the appropriate classes that
-                                                we use to style each element. These classes control the overall
-                                                appearance, as well as the showing and hiding via CSS transitions. You
-                                                can modify any of this with custom CSS or overriding our default
-                                                variables. It's also worth noting that just about any HTML can go within
-                                                the <code>.accordion-body</code>, though the transition does limit
-                                                overflow.
-                                            </div>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">About</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Accordian example -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            My Picture
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>Yes, This Is Me - 😎</strong>
+                                            <img src="images/my-img.jpg" width="200" alt="">
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Accordian example -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden
+                                            by default, until the collapse plugin adds the appropriate classes that
+                                            we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You
+                                            can modify any of this with custom CSS or overriding our default
+                                            variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit
+                                            overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden
+                                            by default, until the collapse plugin adds the appropriate classes that
+                                            we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You
+                                            can modify any of this with custom CSS or overriding our default
+                                            variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit
+                                            overflow.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Offcanvas part -->
+                            <!-- Accordian example -->
                         </div>
+                        <!-- Offcanvas part -->
                     </div>
-            </nav>
+                </div>
+        </nav>
         <!-- </div> -->
     </header>
     <!-- Header Starts -->
 
-    <!-- Section Part-1 Starts -->
-    <section class="part-1">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="images/slider/slider (4).jpg" class="d-block w-100" alt="...">
-                    <div class="middle">
-                        <h1>It's never Too Late To <br> <span>Start New</span></h1>
-                    </div>
+    <main>
+        <!-- Section Part-1 Starts -->
+        <section class="part-1">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/slider/slider (4).jpg" class="d-block w-100" alt="...">
+                        <div class="middle">
+                            <h1>It's never Too Late To <br> <span>Start New</span></h1>
+                        </div>
 
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="images/slider/slider (2).jpg" class="d-block w-100" alt="...">
+                        <div class="middle">
+                            <h1>Everyday Is A New Day To <span>Wear New</span></h1>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="15000">
+                        <img src="images/slider/slider (3).jpg" class="d-block w-100" alt="...">
+                        <div class="middle">
+                            <h1>The Best of Yourself Is Yet To Be <span>Discoverd</span></h1>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="images/slider/slider (2).jpg" class="d-block w-100" alt="...">
-                    <div class="middle">
-                        <h1>Everyday Is A New Day To <span>Wear New</span></h1>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="15000">
-                    <img src="images/slider/slider (3).jpg" class="d-block w-100" alt="...">
-                    <div class="middle">
-                        <h1>The Best of Yourself Is Yet To Be <span>Discoverd</span></h1>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button> -->
-            <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button> -->
-        </div>
-    </section>
-    <!-- Section Part-1 Ends -->
-
-    <!-- Section Part-2 Starts -->
-    <section class="part-2">
-        <div class="container mt-5 mb-5">
-            <div class="content">
-                <h1 class="text-center mb-5">Something you Might Want To Have</h1>
             </div>
-            <div class="row gx-4 gy-4">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div class="coll p-3 d-flex justify-content-between align-items-center"
-                        style="background-color:rgb(81, 172, 172) ;">
-                        <div class="para text-center hvr-grow-rotate">Watch</div>
-                        <div class="item-pic hvr-grow-rotate">
-                            <img src="images/categories/watch.png" alt="">
+        </section>
+        <!-- Section Part-1 Ends -->
+
+        <!-- Section Part-2 Starts -->
+        <section class="part-2">
+            <div class="container mt-5 mb-5">
+                <div class="content">
+                    <h1 class="text-center mb-5">Something you Might Want To Have</h1>
+                </div>
+                <div class="row gx-4 gy-4">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="coll p-3 d-flex justify-content-between align-items-center"
+                            style="background-color:rgb(81, 172, 172) ;">
+                            <div class="para text-center hvr-grow-rotate">Watch</div>
+                            <div class="item-pic hvr-grow-rotate">
+                                <img src="images/categories/watch.png" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div class="coll p-3 d-flex justify-content-between align-items-center"
-                        style="background-color: rgb(95, 140, 192);">
-                        <div class="para text-center hvr-grow-rotate">Bag</div>
-                        <div class="item-pic hvr-grow-rotate">
-                            <img src="images/categories/bag.png" alt="">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="coll p-3 d-flex justify-content-between align-items-center"
+                            style="background-color: rgb(95, 140, 192);">
+                            <div class="para text-center hvr-grow-rotate">Bag</div>
+                            <div class="item-pic hvr-grow-rotate">
+                                <img src="images/categories/bag.png" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                    <div class="coll p-3 d-flex justify-content-between align-items-center"
-                        style="background-color:rgb(81, 151, 144) ;">
-                        <div class="para text-center hvr-grow-rotate">Shoe</div>
-                        <div class="item-pic hvr-grow-rotate">
-                            <img src="images/categories/shoes.png" alt="">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="coll p-3 d-flex justify-content-between align-items-center"
+                            style="background-color:rgb(81, 151, 144) ;">
+                            <div class="para text-center hvr-grow-rotate">Shoe</div>
+                            <div class="item-pic hvr-grow-rotate">
+                                <img src="images/categories/shoes.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Section Part-2 Ends -->
+        </section>
+        <!-- Section Part-2 Ends -->
 
-    <!-- Section Part-3 starts -->
-    <section class="part-3">
+        <!-- Section Part-3 starts -->
+        <section class="part-3">
+            <div class="container">
+                <h1 class="first_h1">
+                    <center>Our Exclusive <span>Shoe</span> Collection</center>
+                </h1>
+                <div class="row gx-4 gy-5">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="cards_sec">
+                            <div class="card card-3">
+                                <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">One by one, the team of the CONMEBOL Copa America chosen by
+                                        GET
+                                    </h5>
+                                    <p class="card-text">The Technical Study Group (GET) of CONMEBOL have confirmed
+                                        their
+                                        team of the CONMEBOL Copa América 2021 which came to a close on Saturday with
+                                        the
+                                        dramatic final between Argentina and Brazil.</p>
+                                    <span>$200*</span>
+                                    <a target="_blank"
+                                        href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
+                                        class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="cards_sec">
+                            <div class="card card-3">
+                                <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">All of the CONMEBOL Copa America champions</h5>
+                                    <p class="card-text">Argentina were crowned champion of the CONMEBOL Copa America
+                                        2021
+                                        with a 1-0 win against rivals Brazil at the Estadio Maracaná to regain the title
+                                        after a long 28 year wait.</p>
+                                    <span>$220*</span>
+                                    <a target="_blank"
+                                        href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
+                                        class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="cards_sec">
+                            <div class="card card-3">
+                                <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Messi, the best player at the CONMEBOL Copa America 2021</h5>
+                                    <p class="card-text">His tears at the final whistle, the hug for each of his
+                                        teammates,
+                                        his support for the coaches and his video call to loved ones in the middle of
+                                        the
+                                        field at the Maracaná. </p>
+                                    <span>$240*</span>
+                                    <a target="_blank"
+                                        href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
+                                        class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Part-3 Ends -->
+
+        <!-- Section Part-4 starts -->
+        <section class="part-4">
+            <div class="container">
+                <h1 class="first_h1">
+                    <center>Our Exclusive <span>Shoe</span> Collection</center>
+                </h1>
+                <div class="row gx-4 gy-5">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="cards_sec">
+                            <div class="card card-3">
+                                <img src="images/bags/bag-1.png" height="250" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">One by one, the team of the CONMEBOL Copa America chosen by
+                                        GET
+                                    </h5>
+                                    <p class="card-text">The Technical Study Group (GET) of CONMEBOL have confirmed
+                                        their
+                                        team of the CONMEBOL Copa América 2021 which came to a close on Saturday with
+                                        the
+                                        dramatic final between Argentina and Brazil.</p>
+                                    <span>$200*</span>
+                                    <a target="_blank"
+                                        href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
+                                        class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="cards_sec">
+                            <div class="card card-3">
+                                <img src="images/bags/bag-3.png" height="250" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">All of the CONMEBOL Copa America champions</h5>
+                                    <p class="card-text">Argentina were crowned champion of the CONMEBOL Copa America
+                                        2021
+                                        with a 1-0 win against rivals Brazil at the Estadio Maracaná to regain the title
+                                        after a long 28 year wait.</p>
+                                    <span>$220*</span>
+                                    <a target="_blank"
+                                        href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
+                                        class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="cards_sec">
+                            <div class="card card-3">
+                                <img src="images/bags/bag-2.png" height="250" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Messi, the best player at the CONMEBOL Copa America 2021</h5>
+                                    <p class="card-text">His tears at the final whistle, the hug for each of his
+                                        teammates,
+                                        his support for the coaches and his video call to loved ones in the middle of
+                                        the
+                                        field at the Maracaná. </p>
+                                    <span>$240*</span>
+                                    <a target="_blank"
+                                        href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
+                                        class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Part-4 Ends -->
+
+        <!-- Section Part-5 Starts -->
+        <section class="part-5">
+            <div class="container touch d-flex align-items-center justify-content-center">
+                <div>
+                    <center>
+                        <h1>LET'S STAY IN TOUCH 🤝</h1>
+                        <span>Get Updates on Sales, Specials and More</span>
+                        <br>
+                        <div class="input-group mt-4 mb-3 w-75">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                        </div>
+                        <button type="button" class="btn btn-info hvr-grow-shadow mt-2">Submit</button>
+                    </center>
+                </div>
+            </div>
+        </section>
+        <!-- Section Part-5 Ends -->
+
+        <div class="top-btn hvr-wobble-vertical">
+            <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </main>
+
+    <footer class="footer py-3 bg-light" style="margin-top: 90px;">
         <div class="container">
-            <h1 class="first_h1">
-                <center>Our Exclusive <span>Shoe</span> Collection</center>
-            </h1>
-            <div class="row gx-4 gy-5">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="cards_sec">
-                        <div class="card card-3">
-                            <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">One by one, the team of the CONMEBOL Copa America chosen by GET
-                                </h5>
-                                <p class="card-text">The Technical Study Group (GET) of CONMEBOL have confirmed their
-                                    team of the CONMEBOL Copa América 2021 which came to a close on Saturday with the
-                                    dramatic final between Argentina and Brazil.</p>
-                                <span>$200*</span>
-                                <a target="_blank"
-                                    href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
-                                    class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="cards_sec">
-                        <div class="card card-3">
-                            <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">All of the CONMEBOL Copa America champions</h5>
-                                <p class="card-text">Argentina were crowned champion of the CONMEBOL Copa America 2021
-                                    with a 1-0 win against rivals Brazil at the Estadio Maracaná to regain the title
-                                    after a long 28 year wait.</p>
-                                <span>$220*</span>
-                                <a target="_blank"
-                                    href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
-                                    class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="cards_sec">
-                        <div class="card card-3">
-                            <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Messi, the best player at the CONMEBOL Copa America 2021</h5>
-                                <p class="card-text">His tears at the final whistle, the hug for each of his teammates,
-                                    his support for the coaches and his video call to loved ones in the middle of the
-                                    field at the Maracaná. </p>
-                                <span>$240*</span>
-                                <a target="_blank"
-                                    href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
-                                    class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <span class="text-muted">Place sticky footer content here.</span>
         </div>
-    </section>
-    <!-- Section Part-3 Ends -->
-
-    <!-- Section Part-4 starts -->
-    <section class="part-4">
-        <div class="container">
-            <h1 class="first_h1">
-                <center>Our Exclusive <span>Shoe</span> Collection</center>
-            </h1>
-            <div class="row gx-4 gy-5">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="cards_sec">
-                        <div class="card card-3">
-                            <img src="images/bags/bag-1.png" height="250" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">One by one, the team of the CONMEBOL Copa America chosen by GET
-                                </h5>
-                                <p class="card-text">The Technical Study Group (GET) of CONMEBOL have confirmed their
-                                    team of the CONMEBOL Copa América 2021 which came to a close on Saturday with the
-                                    dramatic final between Argentina and Brazil.</p>
-                                <span>$200*</span>
-                                <a target="_blank"
-                                    href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
-                                    class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="cards_sec">
-                        <div class="card card-3">
-                            <img src="images/bags/bag-3.png" height="250" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">All of the CONMEBOL Copa America champions</h5>
-                                <p class="card-text">Argentina were crowned champion of the CONMEBOL Copa America 2021
-                                    with a 1-0 win against rivals Brazil at the Estadio Maracaná to regain the title
-                                    after a long 28 year wait.</p>
-                                <span>$220*</span>
-                                <a target="_blank"
-                                    href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
-                                    class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="cards_sec">
-                        <div class="card card-3">
-                            <img src="images/bags/bag-2.png" height="250" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Messi, the best player at the CONMEBOL Copa America 2021</h5>
-                                <p class="card-text">His tears at the final whistle, the hug for each of his teammates,
-                                    his support for the coaches and his video call to loved ones in the middle of the
-                                    field at the Maracaná. </p>
-                                <span>$240*</span>
-                                <a target="_blank"
-                                    href="https://copaamerica.com/en/news/team-of-the-conmebol-copa-america-2021"
-                                    class="btn btn-primary">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Section Part-4 Ends -->
-
-    <!-- Section Part-5 Starts -->
-    <section class="part-5">
-        <div class="container touch d-flex align-items-center justify-content-center">
-            <div>
-                <center>
-                    <h1>LET'S STAY IN TOUCH 🤝</h1>
-                <span>Get Updates on Sales, Specials and More</span>
-                <br>
-                <div class="input-group mt-4 mb-3 w-75">
-                    <input type="text" class="form-control" placeholder="Recipient's username"
-                        aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
-                </div>
-                <button type="button" class="btn btn-info hvr-grow-shadow mt-2">Submit</button>
-                </center>
-            </div>
-        </div>
-    </section>
-    <!-- Section Part-5 Ends -->
-
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-          <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-      </footer>
+    </footer>
     <!-- Time and Date -->
     <script>
         var dt = new Date();
