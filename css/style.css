@@ -8,6 +8,8 @@ font-family: 'Monoton', cursive;
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0 0;
 }
 
 body {
@@ -274,7 +276,7 @@ header {
 
 .top-btn {
     background: transparent;
-    padding-right: 100px;
+    padding-right: 90px;
     display: flex;
     float: right;
     bottom: 0;
@@ -283,4 +285,29 @@ header {
     background-image: linear-gradient(40deg, rgb(173, 163, 238), rgba(0, 183, 255, 0.719));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+/* last */
+.item-pic img{
+    width: 140px;
+    height: 130px;
+}
+.icons i {
+    font-size: 25px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: black;
+    box-sizing: border-box;
+    background-color: rgba(161, 161, 161, 0.295);
+    border-radius: 30px;
+}
+.icons i:hover {
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.custom-btn{
+    background-color: #187ab3;
+    color: white;
+    font-weight: 500px;
 }
